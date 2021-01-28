@@ -8,7 +8,6 @@ RUN mkdir -p /03_output
 
 ## copy files
 COPY /02_code/install_packages.R /02_code/install_packages.R
-COPY /02_code/organise_rnaseq_docker.R /02_code/organise_rnaseq_docker.R
 
 
 ## install R-packages
