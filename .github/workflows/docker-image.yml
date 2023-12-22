@@ -21,9 +21,9 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: echo Hello, world!
-      #run: docker build . --file Dockerfile --tag hediatnani/r-env-test:v1$(date +%s)
+      #run: echo Hello, world!
+      run: docker build . --file Dockerfile --tag tibaredha/r-env-test:v1$(date +%s)
       
     - name: Docker Push
-      run: echo Hello, world!
-      #run: docker push hediatnani/r-env-test
+      #run: echo Hello, world!
+      run: docker push tibaredha/r-env-test
